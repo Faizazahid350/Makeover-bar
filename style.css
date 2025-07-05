@@ -1,0 +1,196 @@
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:white(0, 0, 0, 0.4); /* dark overlay */
+  z-index: -1;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: palevioletred;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+header {
+  background: pink;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #e91e63;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x500?text=Blush+%26+Glow') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#f9f9f9;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.hero-content .btn:hover {
+  background: #c2185b;
+}
+
+/* Products Section */
+.products {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.product {
+  background: #fff;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product h3 {
+  margin-bottom: 0.5rem;
+}
+
+.product p {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 3rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 0.75rem 1.5rem;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact button:hover {
+  background: #c2185b;
+}
+
+/* Footer */
+footer {
+  background: #c2185b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
